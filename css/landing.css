@@ -1,0 +1,37 @@
+/* Landing Pages */
+#wrapper #inner-wrapper #navigation, .nav-toggle, .page .title , .tparrows {
+	display: none !important;
+}
+
+.entry h1 {
+	font-size: 36px;
+	margin: 0 0 0.3em;
+	line-height: 1.1em;
+}
+
+.twocol-one {
+	margin-top: 6px;
+	margin-bottom: 0;
+}
+
+#mid-section .twocol-one {
+	margin-bottom: 20px;
+}
+
+#mid-section .twocol-one li.user {
+	list-style-type: none;
+	background: url( '/wp-content/themes/carboncube/images/user-bullet-icon.png' ) left top no-repeat;
+	padding-left: 40px;
+}
+
+#mid-section .twocol-one li.tag {
+	list-style-type: none;
+	background: url( '/wp-content/themes/carboncube/images/tag-bullet-icon.png' ) left top no-repeat;
+	padding-left: 40px;
+}
+
+#lower-section img {
+	border: 0;
+	border-radius: 30px;
+	padding: 0;
+}
