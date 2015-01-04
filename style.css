@@ -1,0 +1,154 @@
+/*
+Theme Name:     CarbonCube
+Theme URI:      http://wptechcentre.com/
+Description:    Child theme for the WooThemes Canvas theme
+Author:         Tom Frearson
+Author URI:     http://wptechcentre.com/
+Template:       canvas
+Version:        1.0
+*/
+
+@import url("../canvas/style.css");
+
+/* Font Styles */
+h1, h2, h3, h4, h5, h6 {
+	color: #ffffff!important;
+}
+
+h2.headline {
+	font-size: 36px;
+	margin: 0 0 0.3em;
+	line-height: 1.1em;
+}
+
+.entry p, .entry li, tr {
+	color: #bbbbbb !important;
+}
+
+
+/* Header */
+#header img {
+	width: 100%;
+}
+
+#logo {
+	display: none;
+}
+
+#inner-wrapper, .boxed-layout #header {
+	padding:0 !important;
+}
+
+#navigation {
+	margin-bottom: 0 !important;
+}
+
+
+/* Content */
+.boxed-layout #content {
+	padding: 30px 40px 20px 40px !important;
+}
+
+
+/* Portfolio */
+.single-portfolio .post-meta {
+	display: none;
+}
+
+.projects .single-featured, .projects-page .single-featured {
+	margin-top: 0.6em;
+}
+
+
+/* Tables */
+.entry table {
+	border: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	background: none;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	border-collapse: separate;
+	margin-bottom: 0;
+}
+
+.entry  table tr {
+	border-bottom: solid 1px #222222;
+}
+
+.entry  table td {
+	padding: 0.5em 1em;
+}
+
+.entry  table td, .entry  table tbody td {
+	border: 0;
+}
+
+
+/* Button Styles */
+#wrapper .woo-sc-button.orange-button {
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	margin: 5px 0;
+	background-color: #f7941d;
+	background: -webkit-linear-gradient(#f7941d, #d75305);
+	background: -moz-linear-gradient(#f7941d, #d75305);
+	background: -ms-linear-gradient(#f7941d, #d75305);
+	background: -o-linear-gradient(#f7941d, #d75305);
+	background: linear-gradient(#f7941d, #d75305);
+	box-shadow: inset 0px 1px 0px #ffbb6a, inset 0 -1px 2px #a33f03;
+	text-shadow: 1px 1px #521601;
+	color: #fff;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #d3561a;
+	font-size: 21px;
+	line-height: 25px;
+	font-weight: bold;
+	font-family: arial;
+	text-align: center;
+	text-transform: none;
+	background-repeat: no-repeat;
+	
+}
+
+#wrapper .woo-sc-button.orange-button:hover {
+	background-color: #eb8016;
+	background: -webkit-linear-gradient(#eb8016, #cc4504);
+	background: -moz-linear-gradient(#eb8016, #cc4504);
+	background: -ms-linear-gradient(#eb8016, #cc4504);
+	background: -o-linear-gradient(#eb8016, #cc4504);
+	background: linear-gradient(#eb8016, #cc4504);
+	box-shadow: inset 0px 1px 0px #ffb164, inset 0 -1px 2px #993302;
+	color: #fff;
+}
+
+
+/* Pricing Page */
+#price-guarantee {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+input[type=text], input[type=email], textarea {
+	width: 95%;
+}
+
+
+/* Footer */
+#footer {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+#footer .col-left {
+	margin-bottom: 0;
+}
+
+#credit a {
+	color: #bbbbbb;
+}
