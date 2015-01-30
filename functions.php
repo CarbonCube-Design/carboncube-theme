@@ -18,11 +18,10 @@ add_action( 'wp_enqueue_scripts', 'ccd_load_scripts' );
 /**
  * Shortcodes
  */
-function ccd_page_header( $post = null ) {	
+function ccd_page_header( $post = null ) {
 	$post = get_post( $post );
 	$id = $post->ID;
 	$type = $post->post_type;
-	$banner_url = null; // header image link, set by custom field
 	
 	if( has_post_thumbnail( $id ) ) {
 		$header_image = wp_get_attachment_image_src( get_post_thumbnail_id( $id ), 'full' );
@@ -31,7 +30,7 @@ function ccd_page_header( $post = null ) {
 		
 		// case 1 - custom header image, no link
 		if( !empty( $page_header ) && empty( $banner_url ) && $type != 'project' ) {
-			return 'CASE 1<img src="' . $page_header . '" class="attachment-full wp-post-image" alt="CarbonCube Design">';
+			return '<img src="' . $page_header . '" class="attachment-full wp-post-image" alt="CarbonCube Design">';
 		}
 		
 		// case 2 - custom header image, with link
