@@ -28,21 +28,28 @@ function ccd_page_header( $post = null ) {
 		$page_header = $header_image[0];
 		$banner_url = get_post_meta( $id, 'banner_url', true );
 		
-		// case 1 - custom header image, no link
+		// case 1 - has thumbnail
 		if( !empty( $page_header ) && empty( $banner_url ) && $type != 'project' ) {
 			return '<img src="' . $page_header . '" class="attachment-full wp-post-image" alt="CarbonCube Design">';
 		}
 		
-		// case 2 - custom header image, with link
+		// case 2 - has thumbnail + link
 		elseif( !empty( $page_header ) && !empty( $banner_url ) && $type != 'project' ) {
 			return '<a href="' . $banner_url . '"><img src="' . $page_header . '" class="attachment-full wp-post-image" alt="CarbonCube Design"></a>';
 		}
 		
-		// case 3 - is Project archive page
+		// case 3 - has thumbnail + is project archive page
 		elseif( $type == 'project' ) {
-			return '<img src="' . get_bloginfo( 'stylesheet_directory' ) . '/images/portfolio-header.jpg" class="attachment-full wp-post-image" alt="CarbonCube Design">';
+		return '<img src="' . get_bloginfo( 'stylesheet_directory' ) . '/images/portfolio-header.jpg" class="attachment-full wp-post-image" alt="CarbonCube Design">';
 		}
 	}
+	
+	// case 5 - no thumbnail + is project archive page
+	elseif( $type == 'project' ) {
+		return '<img src="' . get_bloginfo( 'stylesheet_directory' ) . '/images/portfolio-header.jpg" class="attachment-full wp-post-image" alt="CarbonCube Design">';
+	}
+	
+	// case 5 - no thumbnail
 	else {
 		return '<img src="' . get_bloginfo( 'stylesheet_directory' ) . '/images/default-header.jpg" class="attachment-full wp-post-image" alt="CarbonCube Design">';
 	}
