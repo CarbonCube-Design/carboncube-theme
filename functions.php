@@ -49,7 +49,7 @@ function ccd_page_header( $post = null ) {
 		return '<img src="' . get_bloginfo( 'stylesheet_directory' ) . '/images/portfolio-header.jpg" class="attachment-full wp-post-image" alt="CarbonCube Design">';
 	}
 	
-	// case 5 - no thumbnail
+	// case 6 - no thumbnail
 	else {
 		return '<img src="' . get_bloginfo( 'stylesheet_directory' ) . '/images/default-header.jpg" class="attachment-full wp-post-image" alt="CarbonCube Design">';
 	}
